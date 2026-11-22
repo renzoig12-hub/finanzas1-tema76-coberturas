@@ -6,3 +6,15 @@
 2026-11-22 18:12:08 | BCRPData API | PD04709XD | HTTP 200 | filas=3653
 2026-11-22 18:13:21 | Yahoo Finance (yfinance) | GC=F | HTTP n/d | filas=3520
 2026-11-22 18:13:23 | Yahoo Finance (yfinance) | HG=F | HTTP n/d | filas=3520
+[2026-11-22 14:04:40] === Inicio 01_extraccion_api.py (BCRP API + Yahoo Finance) ===
+[2026-11-22 14:04:42] PD38026MD (igbvl) | HTTP 200 | 3653 días | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD38026MD/json/2012-01-01/2025-12-31
+[2026-11-22 14:04:45] PD04704XD (oro_usd) | HTTP 200 | 3653 días | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04704XD/json/2012-01-01/2025-12-31
+[2026-11-22 14:04:48] PD04701XD (cobre_cusd_lb) | HTTP 200 | 3653 días | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04701XD/json/2012-01-01/2025-12-31
+[2026-11-22 14:04:51] PD31893DD (rend_bono10_pen) | HTTP 200 | 3653 días | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD31893DD/json/2012-01-01/2025-12-31
+[2026-11-22 14:04:54] PD04638PD (tc_pen_usd) | HTTP 200 | 3653 días | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04638PD/json/2012-01-01/2025-12-31
+[2026-11-22 14:04:57] PD04709XD (embig_pe) | HTTP 200 | 3653 días | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04709XD/json/2012-01-01/2025-12-31
+[2026-11-22 14:04:59] Guardado datos_crudos_bcrp_2024200504J.csv | filas: 21918
+[2026-11-22 14:04:59] GC=F (oro_fut_usd) | HTTP n/d (yfinance 0.2.66) | 3520 días
+[2026-11-22 14:05:01] HG=F (cobre_fut_usd_lb) | HTTP n/d (yfinance 0.2.66) | 3520 días
+[2026-11-22 14:05:02] Guardado datos_crudos_yahoo_2024200504J.csv | filas: 7040
+[2026-11-22 14:05:02] === Fin 01_extraccion_api.py ===
