@@ -648,3 +648,13 @@
 [2026-11-25 12:55:26] SBS CCPEDS 1800 días 2025 | filas: 259
 [2026-11-25 12:55:26] CCPEDS 1800 días | filas: 3627 | años fallidos: ninguno | guardado datos_crudos_sbs_dolares_1800d_2024200504J.csv
 [2026-11-25 12:55:26] === Fin 02_scraping_web.py ===
+[2026-11-25 13:17:27] === Inicio 03_limpieza_datos.py (sin conexión: solo datos_crudos/) ===
+[2026-11-25 13:17:27] BCRP: 3653 días x 6 series | n.d. por serie: {'cobre_cusd_lb': 11, 'embig_pe': 0, 'igbvl': 67, 'oro_usd': 12, 'rend_bono10_pen': 173, 'tc_pen_usd': 169}
+[2026-11-25 13:17:27] Yahoo: 3520 días x 2 series | Close igual a Adj Close: True
+[2026-11-25 13:17:27] SBS: 3627 días x 4 series (decimal x100 -> %)
+[2026-11-25 13:17:27] Fechas fuera del calendario BCRP: Yahoo 0, SBS 0
+[2026-11-25 13:17:27] Atípico aislado: igbvl 21/06/2024 = 22521.03 -> vacío (crudo intacto)
+[2026-11-25 13:17:27] Muestra común: 3477 retornos | 03/01/2012 a 31/12/2025 | saltos: {1.0: 3354, 2.0: 73, 3.0: 48, 4.0: 2}
+[2026-11-25 13:17:27] Cotejo BCRP vs SBS (Δ bono 10a S/): corr = 0.650 | oro spot BCRP vs futuro Yahoo: corr = 0.814
+[2026-11-25 13:17:29] Guardado datos_procesados_2024200504J.csv | 3477 filas x 25 columnas | SHA-256 d1b46c65d74fc8db9f20f076d8dfb6c1b7f6f2513f4c40c651ecffd1ea38f694
+[2026-11-25 13:17:29] === Fin 03_limpieza_datos.py ===
