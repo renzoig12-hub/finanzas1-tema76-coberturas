@@ -18,3 +18,633 @@
 [2026-11-22 14:05:01] HG=F (cobre_fut_usd_lb) | HTTP n/d (yfinance 0.2.66) | 3520 días
 [2026-11-22 14:05:02] Guardado datos_crudos_yahoo_2024200504J.csv | filas: 7040
 [2026-11-22 14:05:02] === Fin 01_extraccion_api.py ===
+[2026-11-25 11:30:49] === Inicio 02_scraping_web.py (SBS, curvas cupón cero soberanas) ===
+[2026-11-25 11:30:57] SBS sesión iniciada | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_doscurvas.aspx
+[2026-11-25 11:30:58] Fechas disponibles en el periodo: 3627 (02/01/2012 a 31/12/2025)
+[2026-11-25 11:30:58] MODO PRUEBA: solo 5 fechas; no se guarda el CSV del año
+[2026-11-25 11:31:45] 2012: 5 días | filas: 805 | sin datos: ninguno
+[2026-11-25 11:31:45] === Fin 02_scraping_web.py ===
+[2026-11-25 11:43:26] === Inicio 02_scraping_web.py (SBS, curvas cupón cero soberanas) ===
+[2026-11-25 11:43:34] SBS sesión iniciada | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_doscurvas.aspx
+[2026-11-25 11:43:35] Fechas disponibles en el periodo: 3627 (02/01/2012 a 31/12/2025)
+[2026-11-25 11:43:44] SBS 02/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:43:53] SBS 03/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:44:01] SBS 04/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:44:09] SBS 05/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:44:17] SBS 06/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:44:26] SBS 09/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:44:35] SBS 10/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:44:43] SBS 11/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:44:51] SBS 12/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:45:00] SBS 13/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:45:09] SBS 16/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:45:18] SBS 17/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:45:26] SBS 18/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:45:35] SBS 19/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:45:44] SBS 20/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:45:54] SBS 23/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:46:04] SBS 24/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:46:14] SBS 25/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:46:23] SBS 26/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:46:32] SBS 27/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:46:42] SBS 30/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:46:51] SBS 31/01/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:47:00] SBS 01/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:47:09] SBS 02/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:47:19] SBS 03/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:47:28] SBS 06/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:47:37] SBS 07/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:47:46] SBS 08/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:47:55] SBS 09/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:48:05] SBS 10/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:48:14] SBS 13/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:48:23] SBS 14/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:48:32] SBS 15/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:48:41] SBS 16/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:48:51] SBS 17/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:49:00] SBS 20/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:49:09] SBS 21/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:49:18] SBS 22/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:49:27] SBS 23/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:49:36] SBS 24/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:49:45] SBS 27/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:49:54] SBS 28/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:50:03] SBS 29/02/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:50:14] SBS 01/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:50:25] SBS 02/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:50:34] SBS 05/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:50:44] SBS 06/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:50:54] SBS 07/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:51:04] SBS 08/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:51:14] SBS 09/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:51:24] SBS 12/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:51:34] SBS 13/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:51:43] SBS 14/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:51:53] SBS 15/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:52:03] SBS 16/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:52:13] SBS 19/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:52:23] SBS 20/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:52:33] SBS 21/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:52:42] SBS 22/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:52:51] SBS 23/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:53:01] SBS 26/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:53:10] SBS 27/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:53:19] SBS 28/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:53:29] SBS 29/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:53:39] SBS 30/03/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:53:49] SBS 02/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:53:59] SBS 03/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:54:08] SBS 04/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:54:18] SBS 09/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:54:28] SBS 10/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:54:38] SBS 11/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:54:48] SBS 12/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:54:58] SBS 13/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:55:08] SBS 16/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:55:19] SBS 17/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:55:28] SBS 18/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:55:37] SBS 19/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:55:47] SBS 20/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:55:57] SBS 23/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:56:06] SBS 24/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:56:17] SBS 25/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:56:26] SBS 26/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:56:35] SBS 27/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:56:46] SBS 30/04/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:56:55] SBS 01/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:57:06] SBS 02/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:57:15] SBS 03/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:57:25] SBS 04/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:57:35] SBS 07/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:57:45] SBS 08/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:57:53] SBS 09/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:58:04] SBS 10/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:58:14] SBS 11/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:58:23] SBS 14/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:58:33] SBS 15/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:58:42] SBS 16/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:58:51] SBS 17/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:59:02] SBS 18/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:59:11] SBS 21/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:59:19] SBS 22/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:59:29] SBS 23/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:59:38] SBS 24/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:59:46] SBS 25/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 11:59:55] SBS 28/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:00:04] SBS 29/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:00:15] SBS 30/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:00:25] SBS 31/05/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:00:35] SBS 01/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:00:44] SBS 04/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:00:53] SBS 05/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:01:04] SBS 06/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:01:15] SBS 07/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:01:25] SBS 08/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:01:34] SBS 11/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:01:43] SBS 12/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:01:53] SBS 13/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:02:03] SBS 14/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:02:14] SBS 15/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:02:25] SBS 18/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:02:35] SBS 19/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:02:46] SBS 20/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:02:56] SBS 21/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:03:07] SBS 22/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:03:17] SBS 25/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:03:26] SBS 26/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:03:37] SBS 27/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:03:47] SBS 28/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:03:59] SBS 29/06/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:04:09] SBS 02/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:04:20] SBS 03/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:04:31] SBS 04/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:04:43] SBS 05/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:04:52] SBS 06/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:05:03] SBS 09/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:05:14] SBS 10/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:05:25] SBS 11/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:05:36] SBS 12/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:05:46] SBS 13/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:05:55] SBS 16/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:06:05] SBS 17/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:06:14] SBS 18/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:06:24] SBS 19/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:06:34] SBS 20/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:06:45] SBS 23/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:06:56] SBS 24/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:07:07] SBS 25/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:07:17] SBS 26/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:07:28] SBS 27/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:07:39] SBS 30/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:07:50] SBS 31/07/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:08:00] SBS 01/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:08:10] SBS 02/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:08:20] SBS 03/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:08:31] SBS 06/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:08:41] SBS 07/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:08:51] SBS 08/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:09:01] SBS 09/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:09:11] SBS 10/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:09:21] SBS 13/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:09:32] SBS 14/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:09:44] SBS 15/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:09:56] SBS 16/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:10:08] SBS 17/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:10:18] SBS 20/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:10:30] SBS 21/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:10:41] SBS 22/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:10:52] SBS 23/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:11:02] SBS 24/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:11:12] SBS 27/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:11:21] SBS 28/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:11:31] SBS 29/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:11:41] SBS 30/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:11:49] SBS 31/08/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:11:59] SBS 03/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:12:09] SBS 04/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:12:19] SBS 05/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:12:30] SBS 06/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:12:39] SBS 07/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:12:50] SBS 10/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:13:00] SBS 11/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:13:10] SBS 12/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:13:20] SBS 13/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:13:30] SBS 14/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:13:41] SBS 17/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:13:51] SBS 18/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:14:00] SBS 19/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:14:10] SBS 20/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:14:21] SBS 21/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:14:31] SBS 24/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:14:41] SBS 25/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:14:51] SBS 26/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:15:00] SBS 27/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:15:08] SBS 28/09/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:15:18] SBS 01/10/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:15:28] SBS 02/10/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:15:38] SBS 03/10/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:15:46] SBS 04/10/2012 | HTTP 200 | filas: 161
+[2026-11-25 12:16:06] === Inicio 02_scraping_web.py (SBS, un plazo en un intervalo de tiempo) ===
+[2026-11-25 12:16:06] MODO PRUEBA: solo soles, 10 años, 2012; no se guarda el CSV
+[2026-11-25 12:16:07] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:16:09] SBS curva CCPSS (lista de fechas) | HTTP 500
+[2026-11-25 12:20:33] === Inicio 02_scraping_web.py (SBS, un plazo en un intervalo de tiempo) ===
+[2026-11-25 12:20:33] MODO PRUEBA: solo soles, 10 años, 2012; no se guarda el CSV
+[2026-11-25 12:20:34] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:20:44] SBS curva CCPSS (lista de fechas) | HTTP 200
+[2026-11-25 12:20:45] CCPSS: 3627 fechas en el periodo (02/01/2012 a 31/12/2025)
+[2026-11-25 12:20:46] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:20:56] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:21:02] SBS fecha inicio 02/01/2012 | HTTP 200
+[2026-11-25 12:21:07] SBS fecha fin 31/12/2012 | HTTP 200
+[2026-11-25 12:21:12] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:21:18] SBS consultar CCPSS 3600 02/01/2012-31/12/2012 | HTTP 200
+[2026-11-25 12:21:18] SBS CCPSS 3600 días 2012 | filas: 258
+[2026-11-25 12:21:18] CCPSS 3600 días | filas: 258 | años fallidos: ninguno
+[2026-11-25 12:21:18] === Fin 02_scraping_web.py ===
+[2026-11-25 12:23:14] === Inicio 02_scraping_web.py (SBS, un plazo en un intervalo de tiempo) ===
+[2026-11-25 12:23:15] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:23:24] SBS curva CCPSS (lista de fechas) | HTTP 200
+[2026-11-25 12:23:25] CCPSS: 3627 fechas en el periodo (02/01/2012 a 31/12/2025)
+[2026-11-25 12:23:25] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:23:36] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:23:41] SBS fecha inicio 02/01/2012 | HTTP 200
+[2026-11-25 12:23:46] SBS fecha fin 31/12/2012 | HTTP 200
+[2026-11-25 12:23:51] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:23:56] SBS consultar CCPSS 3600 02/01/2012-31/12/2012 | HTTP 200
+[2026-11-25 12:23:57] SBS CCPSS 3600 días 2012 | filas: 258
+[2026-11-25 12:23:58] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:24:08] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:24:14] SBS fecha inicio 02/01/2013 | HTTP 200
+[2026-11-25 12:24:20] SBS fecha fin 31/12/2013 | HTTP 200
+[2026-11-25 12:24:25] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:24:31] SBS consultar CCPSS 3600 02/01/2013-31/12/2013 | HTTP 200
+[2026-11-25 12:24:31] SBS CCPSS 3600 días 2013 | filas: 258
+[2026-11-25 12:24:32] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:24:42] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:24:48] SBS fecha inicio 02/01/2014 | HTTP 200
+[2026-11-25 12:24:53] SBS fecha fin 31/12/2014 | HTTP 200
+[2026-11-25 12:24:58] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:25:04] SBS consultar CCPSS 3600 02/01/2014-31/12/2014 | HTTP 200
+[2026-11-25 12:25:04] SBS CCPSS 3600 días 2014 | filas: 258
+[2026-11-25 12:25:06] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:25:16] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:25:22] SBS fecha inicio 02/01/2015 | HTTP 200
+[2026-11-25 12:25:27] SBS fecha fin 31/12/2015 | HTTP 200
+[2026-11-25 12:25:32] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:25:37] SBS consultar CCPSS 3600 02/01/2015-31/12/2015 | HTTP 200
+[2026-11-25 12:25:38] SBS CCPSS 3600 días 2015 | filas: 258
+[2026-11-25 12:25:39] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:25:49] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:25:55] SBS fecha inicio 04/01/2016 | HTTP 200
+[2026-11-25 12:26:00] SBS fecha fin 30/12/2016 | HTTP 200
+[2026-11-25 12:26:05] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:26:10] SBS consultar CCPSS 3600 04/01/2016-30/12/2016 | HTTP 200
+[2026-11-25 12:26:11] SBS CCPSS 3600 días 2016 | filas: 260
+[2026-11-25 12:26:11] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:26:21] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:26:26] SBS fecha inicio 02/01/2017 | HTTP 200
+[2026-11-25 12:26:31] SBS fecha fin 29/12/2017 | HTTP 200
+[2026-11-25 12:26:36] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:26:43] SBS consultar CCPSS 3600 02/01/2017-29/12/2017 | HTTP 200
+[2026-11-25 12:26:43] SBS CCPSS 3600 días 2017 | filas: 259
+[2026-11-25 12:26:44] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:26:53] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:26:59] SBS fecha inicio 02/01/2018 | HTTP 200
+[2026-11-25 12:27:04] SBS fecha fin 31/12/2018 | HTTP 200
+[2026-11-25 12:27:09] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:27:15] SBS consultar CCPSS 3600 02/01/2018-31/12/2018 | HTTP 200
+[2026-11-25 12:27:16] SBS CCPSS 3600 días 2018 | filas: 259
+[2026-11-25 12:27:17] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:27:27] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:27:36] SBS fecha inicio 02/01/2019 | HTTP 200
+[2026-11-25 12:27:41] SBS fecha fin 31/12/2019 | HTTP 200
+[2026-11-25 12:27:47] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:27:52] SBS consultar CCPSS 3600 02/01/2019-31/12/2019 | HTTP 200
+[2026-11-25 12:27:53] SBS CCPSS 3600 días 2019 | filas: 259
+[2026-11-25 12:27:53] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:28:04] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:28:10] SBS fecha inicio 02/01/2020 | HTTP 200
+[2026-11-25 12:28:15] SBS fecha fin 31/12/2020 | HTTP 200
+[2026-11-25 12:28:20] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:28:25] SBS consultar CCPSS 3600 02/01/2020-31/12/2020 | HTTP 200
+[2026-11-25 12:28:26] SBS CCPSS 3600 días 2020 | filas: 260
+[2026-11-25 12:28:26] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:28:36] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:28:42] SBS fecha inicio 04/01/2021 | HTTP 200
+[2026-11-25 12:28:47] SBS fecha fin 31/12/2021 | HTTP 200
+[2026-11-25 12:28:53] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:28:59] SBS consultar CCPSS 3600 04/01/2021-31/12/2021 | HTTP 200
+[2026-11-25 12:28:59] SBS CCPSS 3600 días 2021 | filas: 260
+[2026-11-25 12:29:00] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:29:10] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:29:16] SBS fecha inicio 03/01/2022 | HTTP 200
+[2026-11-25 12:29:21] SBS fecha fin 30/12/2022 | HTTP 200
+[2026-11-25 12:29:27] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:29:32] SBS consultar CCPSS 3600 03/01/2022-30/12/2022 | HTTP 200
+[2026-11-25 12:29:33] SBS CCPSS 3600 días 2022 | filas: 260
+[2026-11-25 12:29:34] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:29:44] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:29:52] SBS fecha inicio 02/01/2023 | HTTP 200
+[2026-11-25 12:29:57] SBS fecha fin 29/12/2023 | HTTP 200
+[2026-11-25 12:30:02] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:30:08] SBS consultar CCPSS 3600 02/01/2023-29/12/2023 | HTTP 200
+[2026-11-25 12:30:09] SBS CCPSS 3600 días 2023 | filas: 259
+[2026-11-25 12:30:09] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:30:20] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:30:26] SBS fecha inicio 02/01/2024 | HTTP 200
+[2026-11-25 12:30:31] SBS fecha fin 31/12/2024 | HTTP 200
+[2026-11-25 12:30:37] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:30:42] SBS consultar CCPSS 3600 02/01/2024-31/12/2024 | HTTP 200
+[2026-11-25 12:30:43] SBS CCPSS 3600 días 2024 | filas: 260
+[2026-11-25 12:30:44] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:30:55] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:31:00] SBS fecha inicio 02/01/2025 | HTTP 200
+[2026-11-25 12:31:05] SBS fecha fin 31/12/2025 | HTTP 200
+[2026-11-25 12:31:11] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:31:16] SBS consultar CCPSS 3600 02/01/2025-31/12/2025 | HTTP 200
+[2026-11-25 12:31:16] SBS CCPSS 3600 días 2025 | filas: 259
+[2026-11-25 12:31:16] CCPSS 3600 días | filas: 3627 | años fallidos: ninguno | guardado datos_crudos_sbs_soles_3600d_2024200504J.csv
+[2026-11-25 12:31:17] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:31:29] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:31:35] SBS fecha inicio 02/01/2012 | HTTP 200
+[2026-11-25 12:31:40] SBS fecha fin 31/12/2012 | HTTP 200
+[2026-11-25 12:31:45] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:31:51] SBS consultar CCPSS 1800 02/01/2012-31/12/2012 | HTTP 200
+[2026-11-25 12:31:51] SBS CCPSS 1800 días 2012 | filas: 258
+[2026-11-25 12:31:52] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:32:02] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:32:07] SBS fecha inicio 02/01/2013 | HTTP 200
+[2026-11-25 12:32:12] SBS fecha fin 31/12/2013 | HTTP 200
+[2026-11-25 12:32:17] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:32:23] SBS consultar CCPSS 1800 02/01/2013-31/12/2013 | HTTP 200
+[2026-11-25 12:32:23] SBS CCPSS 1800 días 2013 | filas: 258
+[2026-11-25 12:32:24] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:32:34] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:32:40] SBS fecha inicio 02/01/2014 | HTTP 200
+[2026-11-25 12:32:45] SBS fecha fin 31/12/2014 | HTTP 200
+[2026-11-25 12:32:50] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:32:55] SBS consultar CCPSS 1800 02/01/2014-31/12/2014 | HTTP 200
+[2026-11-25 12:32:56] SBS CCPSS 1800 días 2014 | filas: 258
+[2026-11-25 12:32:57] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:33:07] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:33:13] SBS fecha inicio 02/01/2015 | HTTP 200
+[2026-11-25 12:33:18] SBS fecha fin 31/12/2015 | HTTP 200
+[2026-11-25 12:33:24] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:33:30] SBS consultar CCPSS 1800 02/01/2015-31/12/2015 | HTTP 200
+[2026-11-25 12:33:30] SBS CCPSS 1800 días 2015 | filas: 258
+[2026-11-25 12:33:31] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:33:41] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:33:46] SBS fecha inicio 04/01/2016 | HTTP 200
+[2026-11-25 12:33:52] SBS fecha fin 30/12/2016 | HTTP 200
+[2026-11-25 12:33:57] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:34:03] SBS consultar CCPSS 1800 04/01/2016-30/12/2016 | HTTP 200
+[2026-11-25 12:34:04] SBS CCPSS 1800 días 2016 | filas: 260
+[2026-11-25 12:34:05] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:34:15] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:34:20] SBS fecha inicio 02/01/2017 | HTTP 200
+[2026-11-25 12:34:25] SBS fecha fin 29/12/2017 | HTTP 200
+[2026-11-25 12:34:30] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:34:36] SBS consultar CCPSS 1800 02/01/2017-29/12/2017 | HTTP 200
+[2026-11-25 12:34:36] SBS CCPSS 1800 días 2017 | filas: 259
+[2026-11-25 12:34:37] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:34:47] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:34:52] SBS fecha inicio 02/01/2018 | HTTP 200
+[2026-11-25 12:34:57] SBS fecha fin 31/12/2018 | HTTP 200
+[2026-11-25 12:35:02] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:35:07] SBS consultar CCPSS 1800 02/01/2018-31/12/2018 | HTTP 200
+[2026-11-25 12:35:08] SBS CCPSS 1800 días 2018 | filas: 259
+[2026-11-25 12:35:08] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:35:19] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:35:24] SBS fecha inicio 02/01/2019 | HTTP 200
+[2026-11-25 12:35:30] SBS fecha fin 31/12/2019 | HTTP 200
+[2026-11-25 12:35:35] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:35:41] SBS consultar CCPSS 1800 02/01/2019-31/12/2019 | HTTP 200
+[2026-11-25 12:35:41] SBS CCPSS 1800 días 2019 | filas: 259
+[2026-11-25 12:35:42] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:35:52] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:35:57] SBS fecha inicio 02/01/2020 | HTTP 200
+[2026-11-25 12:36:03] SBS fecha fin 31/12/2020 | HTTP 200
+[2026-11-25 12:36:08] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:36:13] SBS consultar CCPSS 1800 02/01/2020-31/12/2020 | HTTP 200
+[2026-11-25 12:36:14] SBS CCPSS 1800 días 2020 | filas: 260
+[2026-11-25 12:36:15] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:36:24] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:36:30] SBS fecha inicio 04/01/2021 | HTTP 200
+[2026-11-25 12:36:35] SBS fecha fin 31/12/2021 | HTTP 200
+[2026-11-25 12:36:40] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:36:46] SBS consultar CCPSS 1800 04/01/2021-31/12/2021 | HTTP 200
+[2026-11-25 12:36:46] SBS CCPSS 1800 días 2021 | filas: 260
+[2026-11-25 12:36:47] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:36:56] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:37:02] SBS fecha inicio 03/01/2022 | HTTP 200
+[2026-11-25 12:37:07] SBS fecha fin 30/12/2022 | HTTP 200
+[2026-11-25 12:37:12] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:37:18] SBS consultar CCPSS 1800 03/01/2022-30/12/2022 | HTTP 200
+[2026-11-25 12:37:19] SBS CCPSS 1800 días 2022 | filas: 260
+[2026-11-25 12:37:19] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:37:31] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:37:37] SBS fecha inicio 02/01/2023 | HTTP 200
+[2026-11-25 12:37:43] SBS fecha fin 29/12/2023 | HTTP 200
+[2026-11-25 12:37:48] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:37:55] SBS consultar CCPSS 1800 02/01/2023-29/12/2023 | HTTP 200
+[2026-11-25 12:37:55] SBS CCPSS 1800 días 2023 | filas: 259
+[2026-11-25 12:37:56] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:38:06] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:38:12] SBS fecha inicio 02/01/2024 | HTTP 200
+[2026-11-25 12:38:17] SBS fecha fin 31/12/2024 | HTTP 200
+[2026-11-25 12:38:22] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:38:28] SBS consultar CCPSS 1800 02/01/2024-31/12/2024 | HTTP 200
+[2026-11-25 12:38:28] SBS CCPSS 1800 días 2024 | filas: 260
+[2026-11-25 12:38:29] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:38:39] SBS curva CCPSS | HTTP 200
+[2026-11-25 12:38:45] SBS fecha inicio 02/01/2025 | HTTP 200
+[2026-11-25 12:38:50] SBS fecha fin 31/12/2025 | HTTP 200
+[2026-11-25 12:38:55] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:39:02] SBS consultar CCPSS 1800 02/01/2025-31/12/2025 | HTTP 200
+[2026-11-25 12:39:02] SBS CCPSS 1800 días 2025 | filas: 259
+[2026-11-25 12:39:02] CCPSS 1800 días | filas: 3627 | años fallidos: ninguno | guardado datos_crudos_sbs_soles_1800d_2024200504J.csv
+[2026-11-25 12:39:03] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:39:12] SBS curva CCPEDS (lista de fechas) | HTTP 200
+[2026-11-25 12:39:13] CCPEDS: 3627 fechas en el periodo (02/01/2012 a 31/12/2025)
+[2026-11-25 12:39:13] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:39:23] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:39:28] SBS fecha inicio 02/01/2012 | HTTP 200
+[2026-11-25 12:39:33] SBS fecha fin 31/12/2012 | HTTP 200
+[2026-11-25 12:39:38] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:39:44] SBS consultar CCPEDS 3600 02/01/2012-31/12/2012 | HTTP 200
+[2026-11-25 12:39:44] SBS CCPEDS 3600 días 2012 | filas: 258
+[2026-11-25 12:39:45] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:39:55] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:40:00] SBS fecha inicio 02/01/2013 | HTTP 200
+[2026-11-25 12:40:06] SBS fecha fin 31/12/2013 | HTTP 200
+[2026-11-25 12:40:11] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:40:16] SBS consultar CCPEDS 3600 02/01/2013-31/12/2013 | HTTP 200
+[2026-11-25 12:40:17] SBS CCPEDS 3600 días 2013 | filas: 258
+[2026-11-25 12:40:17] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:40:27] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:40:33] SBS fecha inicio 02/01/2014 | HTTP 200
+[2026-11-25 12:40:38] SBS fecha fin 31/12/2014 | HTTP 200
+[2026-11-25 12:40:43] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:40:48] SBS consultar CCPEDS 3600 02/01/2014-31/12/2014 | HTTP 200
+[2026-11-25 12:40:49] SBS CCPEDS 3600 días 2014 | filas: 258
+[2026-11-25 12:40:49] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:40:59] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:41:04] SBS fecha inicio 02/01/2015 | HTTP 200
+[2026-11-25 12:41:09] SBS fecha fin 31/12/2015 | HTTP 200
+[2026-11-25 12:41:14] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:41:20] SBS consultar CCPEDS 3600 02/01/2015-31/12/2015 | HTTP 200
+[2026-11-25 12:41:20] SBS CCPEDS 3600 días 2015 | filas: 258
+[2026-11-25 12:41:20] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:41:30] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:41:36] SBS fecha inicio 04/01/2016 | HTTP 200
+[2026-11-25 12:41:42] SBS fecha fin 30/12/2016 | HTTP 200
+[2026-11-25 12:41:47] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:41:54] SBS consultar CCPEDS 3600 04/01/2016-30/12/2016 | HTTP 200
+[2026-11-25 12:41:54] SBS CCPEDS 3600 días 2016 | filas: 260
+[2026-11-25 12:41:54] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:42:04] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:42:09] SBS fecha inicio 02/01/2017 | HTTP 200
+[2026-11-25 12:42:14] SBS fecha fin 29/12/2017 | HTTP 200
+[2026-11-25 12:42:21] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:42:26] SBS consultar CCPEDS 3600 02/01/2017-29/12/2017 | HTTP 200
+[2026-11-25 12:42:27] SBS CCPEDS 3600 días 2017 | filas: 259
+[2026-11-25 12:42:27] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:42:37] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:42:43] SBS fecha inicio 02/01/2018 | HTTP 200
+[2026-11-25 12:42:49] SBS fecha fin 31/12/2018 | HTTP 200
+[2026-11-25 12:42:54] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:43:00] SBS consultar CCPEDS 3600 02/01/2018-31/12/2018 | HTTP 200
+[2026-11-25 12:43:00] SBS CCPEDS 3600 días 2018 | filas: 259
+[2026-11-25 12:43:01] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:43:12] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:43:17] SBS fecha inicio 02/01/2019 | HTTP 200
+[2026-11-25 12:43:22] SBS fecha fin 31/12/2019 | HTTP 200
+[2026-11-25 12:43:28] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:43:33] SBS consultar CCPEDS 3600 02/01/2019-31/12/2019 | HTTP 200
+[2026-11-25 12:43:34] SBS CCPEDS 3600 días 2019 | filas: 259
+[2026-11-25 12:43:34] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:43:45] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:43:51] SBS fecha inicio 02/01/2020 | HTTP 200
+[2026-11-25 12:43:56] SBS fecha fin 31/12/2020 | HTTP 200
+[2026-11-25 12:44:01] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:44:07] SBS consultar CCPEDS 3600 02/01/2020-31/12/2020 | HTTP 200
+[2026-11-25 12:44:07] SBS CCPEDS 3600 días 2020 | filas: 260
+[2026-11-25 12:44:08] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:44:18] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:44:24] SBS fecha inicio 04/01/2021 | HTTP 200
+[2026-11-25 12:44:29] SBS fecha fin 31/12/2021 | HTTP 200
+[2026-11-25 12:44:34] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:44:39] SBS consultar CCPEDS 3600 04/01/2021-31/12/2021 | HTTP 200
+[2026-11-25 12:44:39] SBS CCPEDS 3600 días 2021 | filas: 260
+[2026-11-25 12:44:40] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:44:50] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:44:56] SBS fecha inicio 03/01/2022 | HTTP 200
+[2026-11-25 12:45:01] SBS fecha fin 30/12/2022 | HTTP 200
+[2026-11-25 12:45:06] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:45:12] SBS consultar CCPEDS 3600 03/01/2022-30/12/2022 | HTTP 200
+[2026-11-25 12:45:13] SBS CCPEDS 3600 días 2022 | filas: 260
+[2026-11-25 12:45:14] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:45:25] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:45:31] SBS fecha inicio 02/01/2023 | HTTP 200
+[2026-11-25 12:45:36] SBS fecha fin 29/12/2023 | HTTP 200
+[2026-11-25 12:45:41] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:45:47] SBS consultar CCPEDS 3600 02/01/2023-29/12/2023 | HTTP 200
+[2026-11-25 12:45:47] SBS CCPEDS 3600 días 2023 | filas: 259
+[2026-11-25 12:45:48] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:45:58] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:46:04] SBS fecha inicio 02/01/2024 | HTTP 200
+[2026-11-25 12:46:09] SBS fecha fin 31/12/2024 | HTTP 200
+[2026-11-25 12:46:14] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:46:19] SBS consultar CCPEDS 3600 02/01/2024-31/12/2024 | HTTP 200
+[2026-11-25 12:46:20] SBS CCPEDS 3600 días 2024 | filas: 260
+[2026-11-25 12:46:20] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:46:31] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:46:37] SBS fecha inicio 02/01/2025 | HTTP 200
+[2026-11-25 12:46:42] SBS fecha fin 31/12/2025 | HTTP 200
+[2026-11-25 12:46:47] SBS plazo 3600 días | HTTP 200
+[2026-11-25 12:46:53] SBS consultar CCPEDS 3600 02/01/2025-31/12/2025 | HTTP 200
+[2026-11-25 12:46:53] SBS CCPEDS 3600 días 2025 | filas: 259
+[2026-11-25 12:46:53] CCPEDS 3600 días | filas: 3627 | años fallidos: ninguno | guardado datos_crudos_sbs_dolares_3600d_2024200504J.csv
+[2026-11-25 12:46:54] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:47:04] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:47:09] SBS fecha inicio 02/01/2012 | HTTP 200
+[2026-11-25 12:47:15] SBS fecha fin 31/12/2012 | HTTP 200
+[2026-11-25 12:47:20] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:47:25] SBS consultar CCPEDS 1800 02/01/2012-31/12/2012 | HTTP 200
+[2026-11-25 12:47:26] SBS CCPEDS 1800 días 2012 | filas: 258
+[2026-11-25 12:47:27] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:47:37] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:47:43] SBS fecha inicio 02/01/2013 | HTTP 200
+[2026-11-25 12:47:48] SBS fecha fin 31/12/2013 | HTTP 200
+[2026-11-25 12:47:53] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:47:59] SBS consultar CCPEDS 1800 02/01/2013-31/12/2013 | HTTP 200
+[2026-11-25 12:48:00] SBS CCPEDS 1800 días 2013 | filas: 258
+[2026-11-25 12:48:00] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:48:10] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:48:15] SBS fecha inicio 02/01/2014 | HTTP 200
+[2026-11-25 12:48:21] SBS fecha fin 31/12/2014 | HTTP 200
+[2026-11-25 12:48:26] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:48:32] SBS consultar CCPEDS 1800 02/01/2014-31/12/2014 | HTTP 200
+[2026-11-25 12:48:32] SBS CCPEDS 1800 días 2014 | filas: 258
+[2026-11-25 12:48:33] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:48:42] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:48:48] SBS fecha inicio 02/01/2015 | HTTP 200
+[2026-11-25 12:48:52] SBS fecha fin 31/12/2015 | HTTP 200
+[2026-11-25 12:48:57] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:49:03] SBS consultar CCPEDS 1800 02/01/2015-31/12/2015 | HTTP 200
+[2026-11-25 12:49:03] SBS CCPEDS 1800 días 2015 | filas: 258
+[2026-11-25 12:49:04] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:49:14] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:49:20] SBS fecha inicio 04/01/2016 | HTTP 200
+[2026-11-25 12:49:26] SBS fecha fin 30/12/2016 | HTTP 200
+[2026-11-25 12:49:31] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:49:36] SBS consultar CCPEDS 1800 04/01/2016-30/12/2016 | HTTP 200
+[2026-11-25 12:49:37] SBS CCPEDS 1800 días 2016 | filas: 260
+[2026-11-25 12:49:38] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:49:48] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:49:54] SBS fecha inicio 02/01/2017 | HTTP 200
+[2026-11-25 12:49:58] SBS fecha fin 29/12/2017 | HTTP 200
+[2026-11-25 12:50:03] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:50:09] SBS consultar CCPEDS 1800 02/01/2017-29/12/2017 | HTTP 200
+[2026-11-25 12:50:10] SBS CCPEDS 1800 días 2017 | filas: 259
+[2026-11-25 12:50:10] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:50:49] SBS CCPEDS 1800 02/01/2018: intento 1, error ChunkedEncodingError
+[2026-11-25 12:50:55] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:51:06] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:51:12] SBS fecha inicio 02/01/2018 | HTTP 200
+[2026-11-25 12:51:17] SBS fecha fin 31/12/2018 | HTTP 200
+[2026-11-25 12:51:23] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:51:28] SBS consultar CCPEDS 1800 02/01/2018-31/12/2018 | HTTP 200
+[2026-11-25 12:51:29] SBS CCPEDS 1800 días 2018 | filas: 259
+[2026-11-25 12:51:30] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:51:39] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:51:45] SBS fecha inicio 02/01/2019 | HTTP 200
+[2026-11-25 12:51:50] SBS fecha fin 31/12/2019 | HTTP 200
+[2026-11-25 12:51:55] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:52:00] SBS consultar CCPEDS 1800 02/01/2019-31/12/2019 | HTTP 200
+[2026-11-25 12:52:01] SBS CCPEDS 1800 días 2019 | filas: 259
+[2026-11-25 12:52:02] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:52:13] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:52:19] SBS fecha inicio 02/01/2020 | HTTP 200
+[2026-11-25 12:52:25] SBS fecha fin 31/12/2020 | HTTP 200
+[2026-11-25 12:52:31] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:52:37] SBS consultar CCPEDS 1800 02/01/2020-31/12/2020 | HTTP 200
+[2026-11-25 12:52:38] SBS CCPEDS 1800 días 2020 | filas: 260
+[2026-11-25 12:52:38] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:52:48] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:52:54] SBS fecha inicio 04/01/2021 | HTTP 200
+[2026-11-25 12:52:59] SBS fecha fin 31/12/2021 | HTTP 200
+[2026-11-25 12:53:04] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:53:10] SBS consultar CCPEDS 1800 04/01/2021-31/12/2021 | HTTP 200
+[2026-11-25 12:53:10] SBS CCPEDS 1800 días 2021 | filas: 260
+[2026-11-25 12:53:11] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:53:21] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:53:26] SBS fecha inicio 03/01/2022 | HTTP 200
+[2026-11-25 12:53:32] SBS fecha fin 30/12/2022 | HTTP 200
+[2026-11-25 12:53:37] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:53:43] SBS consultar CCPEDS 1800 03/01/2022-30/12/2022 | HTTP 200
+[2026-11-25 12:53:43] SBS CCPEDS 1800 días 2022 | filas: 260
+[2026-11-25 12:53:44] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:53:54] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:53:59] SBS fecha inicio 02/01/2023 | HTTP 200
+[2026-11-25 12:54:04] SBS fecha fin 29/12/2023 | HTTP 200
+[2026-11-25 12:54:10] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:54:15] SBS consultar CCPEDS 1800 02/01/2023-29/12/2023 | HTTP 200
+[2026-11-25 12:54:16] SBS CCPEDS 1800 días 2023 | filas: 259
+[2026-11-25 12:54:17] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:54:27] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:54:33] SBS fecha inicio 02/01/2024 | HTTP 200
+[2026-11-25 12:54:39] SBS fecha fin 31/12/2024 | HTTP 200
+[2026-11-25 12:54:46] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:54:52] SBS consultar CCPEDS 1800 02/01/2024-31/12/2024 | HTTP 200
+[2026-11-25 12:54:53] SBS CCPEDS 1800 días 2024 | filas: 260
+[2026-11-25 12:54:53] SBS abrir página | HTTP 200 | https://www.sbs.gob.pe/app/pu/CCID/Paginas/cc_unperiodo.aspx
+[2026-11-25 12:55:04] SBS curva CCPEDS | HTTP 200
+[2026-11-25 12:55:10] SBS fecha inicio 02/01/2025 | HTTP 200
+[2026-11-25 12:55:15] SBS fecha fin 31/12/2025 | HTTP 200
+[2026-11-25 12:55:20] SBS plazo 1800 días | HTTP 200
+[2026-11-25 12:55:26] SBS consultar CCPEDS 1800 02/01/2025-31/12/2025 | HTTP 200
+[2026-11-25 12:55:26] SBS CCPEDS 1800 días 2025 | filas: 259
+[2026-11-25 12:55:26] CCPEDS 1800 días | filas: 3627 | años fallidos: ninguno | guardado datos_crudos_sbs_dolares_1800d_2024200504J.csv
+[2026-11-25 12:55:26] === Fin 02_scraping_web.py ===
